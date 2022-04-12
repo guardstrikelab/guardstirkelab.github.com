@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>自动驾驶仿真测试云平台 Oasis - 帮助</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="description" content="自动驾驶仿真测试云平台 Oasis" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- 默认主题 -->
+		<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+		<!-- docsify-themeable主题 -->
+		<link rel="stylesheet" href="./css/theme-simple.css" />
+		<!-- Custom theme styles -->
+		<style>
+			:root {
+				--content-max-width: 90%;
+
+				--base-font-family: 'Source Han Sans CN', -apple-system,
+					BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+					'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+				/* side bar */
+				--sidebar-background: #ffffff;
+				--sidebar-border-color: #eef0f5;
+				--sidebar-border-width: 1px;
+				--sidebar-padding: 0 25px;
+				--sidebar-transition-duration: 0.1s;
+				--sidebar-width: 260px;
+
+				/* Name */
+				--sidebar-name-color: #4F5DEB;
+				--sidebar-name-font-size: 15px;
+				--sidebar-name-font-weight: normal;
+				--sidebar-name-margin: 1.5rem 0 0;
+				--sidebar-name-text-align: center;
+
+				/* Nav Links */
+				--sidebar-nav-link-background-color: #ffffff;
+				--sidebar-nav-link-background-color--active: #f2f3ff;
+				--sidebar-nav-link-background-color--hover: #f2f3ff;
+				--sidebar-nav-link-color--active: #4f5deb;
+				--sidebar-nav-link-color--hover: #4f5deb;
+				--sidebar-nav-link-border-color--active: #4f5deb;
+				--sidebar-nav-link-text-decoration--active: none;
+				--sidebar-nav-link-text-decoration--hover: none;
+
+				/* Toggle */
+				--sidebar-toggle-background: #ffffff;
+			    --search-clear-icon-color1: #ffffff;
+			    --search-clear-icon-color2 :#CDCED4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app"></div>
+		<script>
+			window.$docsify = {
+				// 项目名称
+				name: '自动驾驶仿真测试云平台 Oasis',
+				repo: '',
+				// 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
+				loadSidebar: true,
+				alias: {
+					'/':'/01/help.md', // 默认
+					'/.*/_sidebar.md': '/_sidebar.md',
+				},
+				// 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
+				loadNavbar: false,
+				logo: './logo.png',
+				// 封面支持，默认加载的是项目根目录下的_coverpage.md文件
+				coverpage: false,
+				// 最大支持渲染的标题层级
+				maxLevel: 5,
+				// 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
+				subMaxLevel: 4,
+				// sidebarDisplayLevel: 1,
+				// 小屏设备下合并导航栏到侧边栏
+				mergeNavbar: false,
+				search: {
+					placeholder: '搜索',
+					noData: '找不到结果',
+				},
+				themeable: {
+					readyTransition: true, // default
+					responsiveTables: true, // default
+				},
+			};
+		</script>
+		<!-- Docsify v4 -->
+		<script src="./scripts/docsify.min.js"></script>
+		<!-- 图片放大缩小支持 -->
+		<script src="./scripts/zoom-image.min.js"></script>
+		<!-- 搜索功能支持 -->
+		<script src="./scripts/search.min.js"></script>
+		<!-- plugins -->
+		<script src="./scripts/docsify-sidebar-collapse.min.js"></script>
+		<!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+		<script src="./scripts/docsify-copy-code.min.js"></script>
+	</body>
+</html>
